@@ -23,4 +23,8 @@ Examples of content-card implementations:
 
 <hr>
 
-
+<p align="center">
+  <img src="http://sergej-s.github.io/cdn/react-cards-plugin-01.png" width="480">
+  <img src="http://sergej-s.github.io/cdn/react-cards-plugin-02.png" width="480">
+  <img src="http://sergej-s.github.io/cdn/react-cards-plugin-03.png" width="480">
+</p>
