@@ -8,6 +8,7 @@ var Card= React.createClass({
         mouseOverHandler: React.PropTypes.func.isRequired
     },
 
+    //State is changed on mouse over
     getInitialState: function() {
         return {isOverlayed: false};
     },
