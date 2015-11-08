@@ -21,6 +21,8 @@ Examples of content-card implementations:
 * http://www.dtelepathy.com/blog/inspiration/ux-flows-how-to-champion-your-content-with-cards
 * http://www.pinterest.com/flexewebs/cards-ui/
 
+<hr>
+
 <p align="center">
   <img src="https://sergej-s.github.io/cdn/react-cards-plugin-01.png" width="480">
   <img src="https://sergej-s.github.io/cdn/react-cards-plugin-02.png" width="480">
