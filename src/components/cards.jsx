@@ -96,6 +96,7 @@ var Cards = React.createClass({
         );
     },
 
+    //Change state (columns count) in accordance to window size
     handleResize: function(e) {
         var newColumnsCount = this.getColumnsCount();
         if (this.state.columnsCount !== newColumnsCount) {
