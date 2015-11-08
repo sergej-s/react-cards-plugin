@@ -1,4 +1,4 @@
-# React Cards Plugin - test task
+# React Cards Plugin - test assignment
 
 jQuery plugin with React component inside. Two days. Tested mostly in Chrome. jQuery plugin takes list of cards info, composes a data object and provides it into a react component, which renders cards layout according the data.
 
