@@ -2,7 +2,7 @@
 
 var React = require('react');
 
-var Card= React.createClass({
+var Card = React.createClass({
     propTypes: {
         data: React.PropTypes.object.isRequired,
         mouseOverHandler: React.PropTypes.func.isRequired
@@ -13,7 +13,7 @@ var Card= React.createClass({
         return {isOverlayed: false};
     },
 
-    render: function () {
+    render: function() {
         var data = this.props.data,
             cardStyle = {
                 background: 'url(' + data.img.src + ') no-repeat',
@@ -27,7 +27,7 @@ var Card= React.createClass({
                 width: '100%',
                 top: 0,
                 position: 'absolute'
-            }
+            };
 
         //Add overlay on mouse over
         var overlay = '';
@@ -57,17 +57,16 @@ var Card= React.createClass({
                 {overlay}
             </div>
         );
-
     },
 
-    mouseOverHandler: function (event) {
+    mouseOverHandler: function(event) {
         event.preventDefault();
         if (this.state.isOverlayed === false) {
             this.setState({isOverlayed: true});
         }
     },
 
-    mouseLeaveHandler: function (event) {
+    mouseLeaveHandler: function(event) {
         event.preventDefault();
         if (this.state.isOverlayed === true) {
             this.setState({isOverlayed: false});

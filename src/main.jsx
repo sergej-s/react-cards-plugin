@@ -1,10 +1,10 @@
 'use strict';
 
 var React = require('react');
-var Cards = require('./components/cards.jsx')
+var Cards = require('./components/cards.jsx');
 
 if (typeof jQuery !== 'undefined') {
-    (function ($) {
+    (function($) {
         //Create jQuery plugin
 
         var pluginName = "transformToCards",
@@ -19,7 +19,7 @@ if (typeof jQuery !== 'undefined') {
         }
 
         $.extend(Plugin.prototype, {
-            init: function () {
+            init: function() {
                 var data = [];
 
                 //Interate over all li elements and populate data object with
@@ -43,7 +43,7 @@ if (typeof jQuery !== 'undefined') {
                         }
                     };
                     data.push(cardData);
-                })
+                });
 
                 //Render react cards component with collected data and
                 //predetermined settings
@@ -55,8 +55,8 @@ if (typeof jQuery !== 'undefined') {
             },
         });
 
-        $.fn[pluginName] = function (options) {
-            return this.map(function () {
+        $.fn[pluginName] = function(options) {
+            return this.map(function() {
                 if (!$.data(this, 'plugin_'+pluginName)) {
                     $.data(this, 'plugin_'+pluginName, new Plugin(this, options));
                 }
