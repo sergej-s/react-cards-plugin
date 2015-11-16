@@ -79,10 +79,10 @@ var Cards = React.createClass({
         var cssColumnsClass = '';
         switch (cardsColumns.length) {
             case 4:
-                cssColumnsClass = cssClasses.bigScreen
+                cssColumnsClass = cssClasses.bigScreen;
                 break;
             case 2:
-                cssColumnsClass = cssClasses.middleScreen
+                cssColumnsClass = cssClasses.middleScreen;
                 break;
             default:
         }
@@ -90,7 +90,7 @@ var Cards = React.createClass({
         return (
             <div className={cssClasses.container + ' cards'}>
                 {cardsColumns.map(function(cardsColumn){
-                    return (<div className={cssColumnsClass}>{generateCardsList(cardsColumn)}</div>)
+                    return (<div className={cssColumnsClass}>{generateCardsList(cardsColumn)}</div>);
                 })}
             </div>
         );
